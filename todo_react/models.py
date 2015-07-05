@@ -7,6 +7,6 @@ class ToDo(models.Model):
     description = models.CharField(max_length=300)
     done = models.BooleanField(default=False)
 
-class UserToDos(models.Model)
+class UserToDos(models.Model):
     user = models.ForeignKey(User)
-    todos = models.OneToManyField(ToDo)
+    todos = models.ManyToManyField(ToDo)
