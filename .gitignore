@@ -60,3 +60,4 @@ db.sqlite3
 
 # Frontend specific
 node_modules
+bower_components
